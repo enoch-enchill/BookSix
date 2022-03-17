@@ -1,14 +1,73 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3694C86D-171B-44F0-9E46-D7D6051312F6}"
+	ProjectSection(SolutionItems) = preProject
+		src\docker-compose.yml = src\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{3392077E-D76C-4213-AFCD-3DDE82B06664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSix.Bootstrapper", "src\Bootstrapper\BookSix.Bootstrapper\BookSix.Bootstrapper.csproj", "{88423358-ED2C-418A-AFE5-22E93064AE05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2016D19A-6FDC-4346-9E49-6C1C224803B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{44274DA9-3CC6-45A8-BB8F-2468B85E3E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSix.Shared.Abstractions", "src\Shared\BookSix.Shared.Abstractions\BookSix.Shared.Abstractions.csproj", "{D68A820F-567E-44BE-BE97-2F4C5E55F1E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSix.Shared.Infrastructure", "src\Shared\BookSix.Shared.Infrastructure\BookSix.Shared.Infrastructure.csproj", "{70864C54-6A95-4897-90E2-905175645C44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{85A6DAD6-B31B-4A5A-B329-EDE435F94E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSix.Modules.People.Api", "src\Modules\People\BookSix.Modules.People.Api\BookSix.Modules.People.Api.csproj", "{EF1A7995-3F98-4307-AEEA-33FE0E391331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSix.Modules.People.Core", "src\Modules\People\BookSix.Modules.People.Core\BookSix.Modules.People.Core.csproj", "{EA5C09EA-35A9-4893-ADB2-06C2724BB908}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88423358-ED2C-418A-AFE5-22E93064AE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88423358-ED2C-418A-AFE5-22E93064AE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88423358-ED2C-418A-AFE5-22E93064AE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88423358-ED2C-418A-AFE5-22E93064AE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68A820F-567E-44BE-BE97-2F4C5E55F1E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68A820F-567E-44BE-BE97-2F4C5E55F1E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68A820F-567E-44BE-BE97-2F4C5E55F1E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68A820F-567E-44BE-BE97-2F4C5E55F1E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70864C54-6A95-4897-90E2-905175645C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70864C54-6A95-4897-90E2-905175645C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70864C54-6A95-4897-90E2-905175645C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70864C54-6A95-4897-90E2-905175645C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1A7995-3F98-4307-AEEA-33FE0E391331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1A7995-3F98-4307-AEEA-33FE0E391331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1A7995-3F98-4307-AEEA-33FE0E391331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1A7995-3F98-4307-AEEA-33FE0E391331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA5C09EA-35A9-4893-ADB2-06C2724BB908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5C09EA-35A9-4893-ADB2-06C2724BB908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA5C09EA-35A9-4893-ADB2-06C2724BB908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA5C09EA-35A9-4893-ADB2-06C2724BB908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3392077E-D76C-4213-AFCD-3DDE82B06664} = {3694C86D-171B-44F0-9E46-D7D6051312F6}
+		{88423358-ED2C-418A-AFE5-22E93064AE05} = {3392077E-D76C-4213-AFCD-3DDE82B06664}
+		{2016D19A-6FDC-4346-9E49-6C1C224803B6} = {3694C86D-171B-44F0-9E46-D7D6051312F6}
+		{44274DA9-3CC6-45A8-BB8F-2468B85E3E39} = {3694C86D-171B-44F0-9E46-D7D6051312F6}
+		{D68A820F-567E-44BE-BE97-2F4C5E55F1E2} = {44274DA9-3CC6-45A8-BB8F-2468B85E3E39}
+		{70864C54-6A95-4897-90E2-905175645C44} = {44274DA9-3CC6-45A8-BB8F-2468B85E3E39}
+		{85A6DAD6-B31B-4A5A-B329-EDE435F94E36} = {2016D19A-6FDC-4346-9E49-6C1C224803B6}
+		{EF1A7995-3F98-4307-AEEA-33FE0E391331} = {85A6DAD6-B31B-4A5A-B329-EDE435F94E36}
+		{EA5C09EA-35A9-4893-ADB2-06C2724BB908} = {85A6DAD6-B31B-4A5A-B329-EDE435F94E36}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9842F2C-2391-4F84-B35A-7CB1F41A6C49}
 	EndGlobalSection
 EndGlobal
