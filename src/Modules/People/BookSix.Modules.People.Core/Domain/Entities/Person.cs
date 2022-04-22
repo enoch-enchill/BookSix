@@ -28,4 +28,9 @@ internal class Person
         LastName = lastName;
         CreatedAt = createdAt;
     }
+
+    public void Complete(Email email, Name firstName, Name lastName)
+    {
+
+    }
 }
